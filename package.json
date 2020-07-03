@@ -2,7 +2,7 @@
   "name": "snippets4-react-mobx",
   "displayName": "snippets4 React/Mobx",
   "description": "Snippets for React and Mobx ",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.46.0"
   },
