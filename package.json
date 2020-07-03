@@ -1,0 +1,36 @@
+{
+  "name": "snippets4-react-mobx",
+  "displayName": "snippets4 React/Mobx",
+  "description": "Snippets for React and Mobx ",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.46.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/mobx.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/mobx.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react.code-snippets"
+      }
+    ]
+  }
+}

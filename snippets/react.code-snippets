@@ -1,0 +1,113 @@
+{
+  "storeClassComponent": {
+    "scope": "javascript,typescript",
+    "prefix": "store",
+    "body": [
+      "import { observable, action, computed } from 'mobx'",
+      "import { bindPromiseWithOnSuccess } from '@ib/mobx-promise'",
+      "export default class $1{",
+      "constructor(){",
+      "}",
+      "@action.bound",
+      "init(){",
+      "}",
+      "@action.bound",
+      "clearStore(){",
+      "this.init()",
+      "}",
+      "}"
+    ],
+    "description": "Mobx store class"
+  },
+  "reactComponent": {
+    "scope": "javascript,typescript,typescriptreact,javascriptreact",
+    "prefix": "rcmp",
+    "body": [
+      "import React from 'react'",
+      "import { observer } from 'mobx-react'",
+      "@observer",
+      "class $1 extends React.Component{",
+      "componentDidMount(){",
+      "}",
+      "render(){",
+      "return <div>$1</div>",
+      "}",
+      "}",
+      "export {$1}"
+    ],
+    "description": "React component"
+  },
+  "reactComponentWithLoadingWrapper": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "rcwl",
+    "body": [
+      "import React from 'react'",
+      "import { observer } from 'mobx-react'",
+      "@observer",
+      "class $1 extends React.Component{",
+      "componentDidMount(){",
+      "this.doNetworkCalls()",
+      "}",
+      "doNetworkCalls=()=>{",
+      "",
+      "}",
+      "renderSuccessUI=observer(()=>{",
+      "return <div />",
+      "}",
+      ")",
+      "render(){",
+      "const {apiStatus,apiError}=this.props.stores",
+      "return(",
+      "<LoadingWrapperWithFailure",
+      "apiStatus={apiStatus}",
+      "apiError={apiError}",
+      "onRetryClick={this.doNetworkCalls}",
+      "renderSuccessUI={this.renderSuccessUI}",
+      "/>",
+      ")",
+      "}",
+      "}",
+      "export {$1}"
+    ],
+    "description": "react comp with loading wrapper"
+  },
+  "import&export": {
+    "scope": "javascript,typescript,typescriptreact,javascriptreact",
+    "prefix": "impexp",
+    "body": ["import {$1} from './$1';", "export default $1"],
+    "description": "import&export"
+  },
+  "service": {
+    "scope": "javascript,typescript,typescriptreact,javascriptreact",
+    "prefix": "service",
+    "body": [
+      "import { create } from 'apisauce'",
+      "",
+      "import { apiMethods } from '../../../Common/constants/APIConstants'",
+      "import { networkCallWithApisauce } from '../../../Common/utils/APIUtils'",
+      "import endPoints from '../endPoints'",
+      "import { BASE_URL } from '../../../Common/constants/EnvironmentConstants'",
+      "",
+      "class $1 {",
+      "   api",
+      "   constructor() {",
+      "      this.api = create({",
+      "         baseURL: BASE_URL",
+      "      })",
+      "   }",
+      "   get$1 = (requestObject) => {",
+      "      return networkCallWithApisauce(",
+      "         this.api,",
+      "         ''",
+      "         {},",
+      "         apiMethods.get",
+      "      )",
+      "   }",
+      "}",
+      "",
+      "export default $1",
+      ""
+    ],
+    "description": "service"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "APIMethod": {
+    "scope": "javascript,typescript",
+    "prefix": "api",
+    "body": [
+      "@action.bound",
+      "set$1APIStatus(apiStatus){}",
+      "@action.bound",
+      "set$1APIError(error){}",
+      "@action.bound",
+      "set$1APIResponse(response){}",
+      "@action.bound",
+      "get$1API(){",
+      "  return bindPromiseWithOnSuccess()",
+      ".to(this.set$1APIStatus,(response)=>{this.set$1APIResponse(response)})",
+      ".catch((error)=>{this.set$1APIError(error)})",
+      "}"
+    ],
+    "description": "apiPromiseMethod"
+  },
+  "mobxComputed": {
+    "scope": "javascript,typescript",
+    "prefix": "cmp",
+    "body": ["@computed", "get $1{", "return", "}"],
+    "description": "Mobx Computed variable"
+  }
+}
