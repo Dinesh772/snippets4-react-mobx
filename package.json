@@ -6,6 +6,10 @@
   "engines": {
     "vscode": "^1.46.0"
   },
+  "publisher": "ganeshkaredla",
+  "author": {
+    "name": "Ganesh Karedla"
+  },
   "categories": [
     "Snippets"
   ],
