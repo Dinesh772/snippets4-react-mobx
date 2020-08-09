@@ -1,6 +1,6 @@
 {
   "storeClassComponent": {
-    "scope": "javascript,typescript",
+    "scope": "javascript,typescript,typescriptreact,javascriptreact",
     "prefix": "store",
     "body": [
       "import { observable, action, computed } from 'mobx'",
@@ -109,5 +109,19 @@
       ""
     ],
     "description": "service"
+  },
+  "test": {
+    "scope": "javascript,typescript,typescriptreact,javascriptreact",
+    "prefix": "test",
+    "body": [
+      "describe('$1',()=>{",
+      "    beforeEach(()=>{",
+      "    })",
+      "    it('',()=>{",
+      "",
+      "    })",
+      "})"
+    ],
+    "description": "test"
   }
 }

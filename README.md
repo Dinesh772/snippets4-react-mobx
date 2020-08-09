@@ -18,18 +18,20 @@ Install via Extension Marketplace
 
 Code snippets for the following triggers:
 
-| Prefix |         Snippet Description         |                        Language                        |
-| ------ | :---------------------------------: | :----------------------------------------------------: |
-| rcmp   |       Sample React component        |            Javascriptreact,typescriptreact             |
-| rcwl   | React Component with LoadingWrapper |            Javascriptreact,typescriptreact             |
-| store  |         Creates mobx store          |                 javascript,typescript                  |
-| impexp |   sample import export statements   | Javascriptreact,typescriptreact, javascript,typescript |
-| api    |    bindPromiseOnSuccess methods     |                 javascript,typescript                  |
+| Prefix  |                Snippet Description                |                        Language                        |
+| ------- | :-----------------------------------------------: | :----------------------------------------------------: |
+| rcmp    |              Sample React component               |            Javascriptreact,typescriptreact             |
+| rcwl    |        React Component with LoadingWrapper        |            Javascriptreact,typescriptreact             |
+| impexp  |          sample import export statements          | Javascriptreact,typescriptreact, javascript,typescript |
+| store   |                Creates mobx store                 |                 javascript,typescript                  |
+| cmp     |           Creates mobx computed method            |                 javascript,typescript                  |
+| api     |           bindPromiseOnSuccess methods            |                 javascript,typescript                  |
+| service | service class with networkcallWithApiSauce method |                 javascript,typescript                  |
 
 ### Details
 
 - License: GKeV01
-- Version: 1.0.0
+- Version: 1.0.4
 - Extension URI: https://github.com/Ganeshkaredla/snippets4-react-mobx.git
 
 ## Known Issues
@@ -42,7 +44,7 @@ Known issues at avaialble at the [Github Repo](https://github.com/Ganeshkaredla/
 
 All notable changes to the "snippets4 React/Mobx" extension will be documented in here and in the details found in the changelog file.
 
-## 1.0.1 [03.07.2020]
+## 1.0.4 [03.07.2020]
 
 - Initial release of snippets4 React/Mobx
 
