@@ -123,5 +123,81 @@
       "})"
     ],
     "description": "test"
+  },
+  "styledComponent": {
+    "scope": "javascript,typescript,typescriptreact,javascriptreact",
+    "prefix": "scp",
+    "body": [
+      "import styled from 'styled-components'",
+      "",
+      "export const $1 =styled.div``"
+    ],
+    "description": "styledComponent"
+  },
+  "model": {
+    "prefix": "model",
+    "scope": "javascript,typescript",
+    "body": ["", "class $1 {", "constructor(){", "}", "}", "export {$1}"],
+    "description": "model"
+  },
+  "init&clearStore": {
+    "prefix": "init",
+    "scope": "javascript,typescript",
+    "body": [
+      "@action.bound",
+      "init(){",
+      "",
+      "}",
+      "@action.bound",
+      "clearStore(){",
+      "this.init()",
+      "}"
+    ],
+    "description": "init&clearStore"
+  },
+  "interface": {
+    "scope": "javascript,typescript,typescriptreact,javascriptreact",
+    "prefix": "int",
+    "body": ["interface $1 {", "", "}"],
+    "description": "interface"
+  },
+  "interfaceWithTranslation": {
+    "prefix": "intwl",
+    "scope": "javascript,typescript,typescriptreact,javascriptreact",
+    "body": ["interface $1 extends WithTranslation{", "", "}"],
+    "description": "interfaceWithTranslation"
+  },
+  "flexProperties": {
+    "scope": "javascript,typescript,typescriptreact,javascriptreact",
+    "prefix": "flex",
+    "body": [
+      "display:flex;",
+      "justify-content:center;",
+      "align-items:center;",
+      "width:100%;"
+    ],
+    "description": "flexProperties"
+  },
+  "basicStyledComponent": {
+    "scope": "javascript,typescript,typescriptreact,javascriptreact",
+    "prefix": "exscp",
+    "body": ["export const $1 =styled.div``"],
+    "description": "basicStyledComponent"
+  },
+  "jestRender": {
+    "scope": "javascript,typescript,typescriptreact,javascriptreact",
+    "prefix": "testRender",
+    "body": ["const {debug,getByText}=render(", "<$1 />", ")"],
+    "description": "jestRender"
+  },
+  "testMockAPI": {
+    "scope": "javascript,typescript,typescriptreact,javascriptreact",
+    "prefix": "testMockAPI",
+    "body": [
+      "const mock$1Promise=new Promise(function(resolve, reject) {})//eslint-disable-line",
+      "const mock$1API=jest.fn()",
+      "const mock$1API.mockReturnValue(mock$1Promise)"
+    ],
+    "description": "testMockAPI"
   }
 }

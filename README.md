@@ -18,20 +18,30 @@ Install via Extension Marketplace
 
 Code snippets for the following triggers:
 
-| Prefix  |                Snippet Description                |                        Language                        |
-| ------- | :-----------------------------------------------: | :----------------------------------------------------: |
-| rcmp    |              Sample React component               |            Javascriptreact,typescriptreact             |
-| rcwl    |        React Component with LoadingWrapper        |            Javascriptreact,typescriptreact             |
-| impexp  |          sample import export statements          | Javascriptreact,typescriptreact, javascript,typescript |
-| store   |                Creates mobx store                 |                 javascript,typescript                  |
-| cmp     |           Creates mobx computed method            |                 javascript,typescript                  |
-| api     |           bindPromiseOnSuccess methods            |                 javascript,typescript                  |
-| service | service class with networkcallWithApiSauce method |                 javascript,typescript                  |
+| Prefix      |                Snippet Description                |                        Language                        |
+| ----------- | :-----------------------------------------------: | :----------------------------------------------------: |
+| rcmp        |              Sample React component               |            Javascriptreact,typescriptreact             |
+| rcwl        |        React Component with LoadingWrapper        |            Javascriptreact,typescriptreact             |
+| int         |               typescript interface                |            Javascriptreact,typescriptreact             |
+| scp         |      styled-components with import statement      |            Javascriptreact,typescriptreact             |
+| exscp       |          basic export styled-components           |            Javascriptreact,typescriptreact             |
+| flex        |               basic flex properties               |            Javascriptreact,typescriptreact             |
+| store       |                Creates mobx store                 |                 javascript,typescript                  |
+| cmp         |           Creates mobx computed method            |                 javascript,typescript                  |
+| api         |           bindPromiseOnSuccess methods            |                 javascript,typescript                  |
+| service     | service class with networkcallWithApiSauce method |                 javascript,typescript                  |
+| init        |               init and clear store                |                 javascript,typescript                  |
+| model       |                    react model                    |                 javascript,typescript                  |
+| test        |               jest testing snippet                | Javascriptreact,typescriptreact, javascript,typescript |
+| testRender  |            jest testing render snippet            | Javascriptreact,typescriptreact, javascript,typescript |
+| testMockAPI |           jest testing mockAPI snippet            | Javascriptreact,typescriptreact, javascript,typescript |
+| intwl       |     typescript interface with WithTranslation     | Javascriptreact,typescriptreact, javascript,typescript |
+| impexp      |          sample import export statements          | Javascriptreact,typescriptreact, javascript,typescript |
 
 ### Details
 
 - License: GKeV01
-- Version: 1.0.4
+- Version: 1.0.6
 - Extension URI: https://github.com/Ganeshkaredla/snippets4-react-mobx.git
 
 ## Known Issues
@@ -44,7 +54,7 @@ Known issues at avaialble at the [Github Repo](https://github.com/Ganeshkaredla/
 
 All notable changes to the "snippets4 React/Mobx" extension will be documented in here and in the details found in the changelog file.
 
-## 1.0.4 [03.07.2020]
+## 1.0.6 [09.08.2020]
 
 - Initial release of snippets4 React/Mobx
 
